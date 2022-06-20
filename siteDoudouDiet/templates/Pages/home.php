@@ -1,233 +1,169 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link      https://cakephp.org CakePHP(tm) Project
- * @since     0.10.0
- * @license   https://opensource.org/licenses/mit-license.php MIT License
- * @var \App\View\AppView $this
- */
-use Cake\Cache\Cache;
-use Cake\Core\Configure;
-use Cake\Core\Plugin;
-use Cake\Datasource\ConnectionManager;
-use Cake\Error\Debugger;
-use Cake\Http\Exception\NotFoundException;
+<?php $this->assign('titleFooter', 'Diététicienne Nutritionniste Saint Cyr sur Mer - La Ciotat'); ?>
+<?php $this->assign('title', 'Candice VIVIAN-LATIL | Votre diététicienne-nutritionniste à Saint Cyr sur Mer | La Ciotat'); ?>
+<?php $this->assign('description', 'Diététicienne Nutritionniste Saint Cyr sur Mer - La Ciotat | Perte de poids - Rééquilibrage alimentaire - Education nutritionnelle - Alimentation de l\'enfant et de l\'adolescent'); ?>
+<section id="slider" class="slider-element boxed-slider">
 
-$this->disableAutoLayout();
+    <div class="container clearfix">
 
-$checkConnection = function (string $name) {
-    $error = null;
-    $connected = false;
-    try {
-        $connection = ConnectionManager::get($name);
-        $connected = $connection->connect();
-    } catch (Exception $connectionError) {
-        $error = $connectionError->getMessage();
-        if (method_exists($connectionError, 'getAttributes')) {
-            $attributes = $connectionError->getAttributes();
-            if (isset($attributes['message'])) {
-                $error .= '<br />' . $attributes['message'];
-            }
-        }
-    }
-
-    return compact('connected', 'error');
-};
-
-if (!Configure::read('debug')) :
-    throw new NotFoundException(
-        'Please replace templates/Pages/home.php with your own version or re-enable debug mode.'
-    );
-endif;
-
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        CakePHP: the rapid development PHP framework:
-        <?= $this->fetch('title') ?>
-    </title>
-    <?= $this->Html->meta('icon') ?>
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'cake', 'home']) ?>
-
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
-</head>
-<body>
-    <header>
-        <div class="container text-center">
-            <a href="https://cakephp.org/" target="_blank" rel="noopener">
-                <img alt="CakePHP" src="https://cakephp.org/v2/img/logos/CakePHP_Logo.svg" width="350" />
-            </a>
-            <h1>
-                Welcome to CakePHP <?= h(Configure::version()) ?> Strawberry (🍓)
-            </h1>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <div class="content">
-                <div class="row">
-                    <div class="column">
-                        <div class="message default text-center">
-                            <small>Please be aware that this page will not be shown if you turn off debug mode unless you replace templates/Pages/home.php with your own version.</small>
-                        </div>
-                        <div id="url-rewriting-warning" style="padding: 1rem; background: #fcebea; color: #cc1f1a; border-color: #ef5753;">
-                            <ul>
-                                <li class="bullet problem">
-                                    URL rewriting is not properly configured on your server.<br />
-                                    1) <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/en/installation.html#url-rewriting">Help me configure it</a><br />
-                                    2) <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/en/development/configuration.html#general-configuration">I don't / can't use URL rewriting</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <?php Debugger::checkSecurityKeys(); ?>
+        <div class="fslider" data-animation="fade">
+            <div class="flexslider">
+                <div class="slider-wrap">
+                    <div class="slide" data-thumb="images/slider/boxed/thumbs/2.jpg">
+                        <a href="#" class="d-block position-relative">
+                            <img src="img/slider/perte-poids.jpg" alt="perte-poids">
+                            <div class="bg-overlay">
+                                <div class="bg-overlay-content justify-content-start align-items-end">
+                                    <div class="h3 fw-light py-2 px-3 bg-light text-dark ms-3 mb-3 rounded">Perte de poids</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <h4>Environment</h4>
-                        <ul>
-                        <?php if (version_compare(PHP_VERSION, '7.2.0', '>=')) : ?>
-                            <li class="bullet success">Your version of PHP is 7.2.0 or higher (detected <?= PHP_VERSION ?>).</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your version of PHP is too low. You need PHP 7.2.0 or higher to use CakePHP (detected <?= PHP_VERSION ?>).</li>
-                        <?php endif; ?>
-
-                        <?php if (extension_loaded('mbstring')) : ?>
-                            <li class="bullet success">Your version of PHP has the mbstring extension loaded.</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your version of PHP does NOT have the mbstring extension loaded.</li>
-                        <?php endif; ?>
-
-                        <?php if (extension_loaded('openssl')) : ?>
-                            <li class="bullet success">Your version of PHP has the openssl extension loaded.</li>
-                        <?php elseif (extension_loaded('mcrypt')) : ?>
-                            <li class="bullet success">Your version of PHP has the mcrypt extension loaded.</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your version of PHP does NOT have the openssl or mcrypt extension loaded.</li>
-                        <?php endif; ?>
-
-                        <?php if (extension_loaded('intl')) : ?>
-                            <li class="bullet success">Your version of PHP has the intl extension loaded.</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your version of PHP does NOT have the intl extension loaded.</li>
-                        <?php endif; ?>
-                        </ul>
+                    <div class="slide" data-thumb="images/slider/boxed/thumbs/3.jpg">
+                        <a href="#" class="d-block position-relative">
+                            <img src="img/slider/reequilibrage-alimentaire.jpg" alt="réequilibrage-alimentaire">
+                            <div class="bg-overlay">
+                                <div class="bg-overlay-content justify-content-end align-items-end">
+                                    <div class="h3 fw-light py-2 px-3 bg-dark text-light me-3 mb-3 rounded">Réesquilibrage alimentaire</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="column">
-                        <h4>Filesystem</h4>
-                        <ul>
-                        <?php if (is_writable(TMP)) : ?>
-                            <li class="bullet success">Your tmp directory is writable.</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your tmp directory is NOT writable.</li>
-                        <?php endif; ?>
-
-                        <?php if (is_writable(LOGS)) : ?>
-                            <li class="bullet success">Your logs directory is writable.</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your logs directory is NOT writable.</li>
-                        <?php endif; ?>
-
-                        <?php $settings = Cache::getConfig('_cake_core_'); ?>
-                        <?php if (!empty($settings)) : ?>
-                            <li class="bullet success">The <em><?= h($settings['className']) ?></em> is being used for core caching. To change the config edit config/app.php</li>
-                        <?php else : ?>
-                            <li class="bullet problem">Your cache is NOT working. Please check the settings in config/app.php</li>
-                        <?php endif; ?>
-                        </ul>
+                    <div class="slide" data-thumb="images/slider/boxed/thumbs/4.jpg">
+                        <a href="#" class="d-block position-relative">
+                            <img src="img/slider/education-nutritionnelle.jpg" alt="education-nutritionnelle">
+                            <div class="bg-overlay">
+                                <div class="bg-overlay-content">
+                                    <div class="titre-slider">Education nutritionelle</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="column">
-                        <h4>Database</h4>
-                        <?php
-                        $result = $checkConnection('default');
-                        ?>
-                        <ul>
-                        <?php if ($result['connected']) : ?>
-                            <li class="bullet success">CakePHP is able to connect to the database.</li>
-                        <?php else : ?>
-                            <li class="bullet problem">CakePHP is NOT able to connect to the database.<br /><?= h($result['error']) ?></li>
-                        <?php endif; ?>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h4>DebugKit</h4>
-                        <ul>
-                        <?php if (Plugin::isLoaded('DebugKit')) : ?>
-                            <li class="bullet success">DebugKit is loaded.</li>
-                            <?php
-                            $result = $checkConnection('debug_kit');
-                            ?>
-                            <?php if ($result['connected']) : ?>
-                                <li class="bullet success">DebugKit can connect to the database.</li>
-                            <?php else : ?>
-                                <li class="bullet problem">DebugKit is <strong>not</strong> able to connect to the database.<br /><?= $result['error'] ?></li>
-                            <?php endif; ?>
-                        <?php else : ?>
-                            <li class="bullet problem">DebugKit is <strong>not</strong> loaded.</li>
-                        <?php endif; ?>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="column links">
-                        <h3>Getting Started</h3>
-                        <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/en/">CakePHP Documentation</a>
-                        <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/en/tutorials-and-examples/cms/installation.html">The 20 min CMS Tutorial</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="column links">
-                        <h3>Help and Bug Reports</h3>
-                        <a target="_blank" rel="noopener" href="irc://irc.freenode.net/cakephp">irc.freenode.net #cakephp</a>
-                        <a target="_blank" rel="noopener" href="http://cakesf.herokuapp.com/">Slack</a>
-                        <a target="_blank" rel="noopener" href="https://github.com/cakephp/cakephp/issues">CakePHP Issues</a>
-                        <a target="_blank" rel="noopener" href="http://discourse.cakephp.org/">CakePHP Forum</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="column links">
-                        <h3>Docs and Downloads</h3>
-                        <a target="_blank" rel="noopener" href="https://api.cakephp.org/">CakePHP API</a>
-                        <a target="_blank" rel="noopener" href="https://bakery.cakephp.org">The Bakery</a>
-                        <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/en/">CakePHP Documentation</a>
-                        <a target="_blank" rel="noopener" href="https://plugins.cakephp.org">CakePHP plugins repo</a>
-                        <a target="_blank" rel="noopener" href="https://github.com/cakephp/">CakePHP Code</a>
-                        <a target="_blank" rel="noopener" href="https://github.com/FriendsOfCake/awesome-cakephp">CakePHP Awesome List</a>
-                        <a target="_blank" rel="noopener" href="https://www.cakephp.org">CakePHP</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="column links">
-                        <h3>Training and Certification</h3>
-                        <a target="_blank" rel="noopener" href="https://cakefoundation.org/">Cake Software Foundation</a>
-                        <a target="_blank" rel="noopener" href="https://training.cakephp.org/">CakePHP Training</a>
+                    <div class="slide" data-thumb="images/slider/boxed/thumbs/5.jpg">
+                        <a href="#" class="d-block position-relative">
+                            <img src="img/slider/alimentation-enfant-adolescent.jpg" alt="alimentation-enfant-adolescent">
+                            <div class="bg-overlay">
+                                <div class="bg-overlay-content">
+                                    <div class="h3 fw-light py-2 px-3 bg-warning text-dark rounded">Alimentation de l'enfant et de l'adolescent</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-</body>
-</html>
+
+    </div>
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+
+                <div class="promo promo-light p-5 bottommargin-lg">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg">
+                            <h3>Try Premium Free for <span>30 Days</span> and you'll never regret it!</h3>
+                            <span>Starts at just <em>$0/month</em> afterwards. No Ads, No Gimmicks and No SPAM. Just Real Content.</span>
+                        </div>
+                        <div class="col-12 col-lg-auto mt-4 mt-lg-0">
+                            <a href="#" class="button button-reveal button-large button-circle text-end m-0"><i class="icon-angle-right"></i><span>Browse Now</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-mb-50">
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-screen i-alt"></i></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>Responsive Layout</h3>
+                                <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-eye i-alt"></i></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>Retina Ready Graphics</h3>
+                                <p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-beaker i-alt"></i></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>Powerful Performance</h3>
+                                <p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-stack i-alt"></i></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>Premium Sliders Included</h3>
+                                <p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-tint i-alt"></i></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>Unlimited Color Options</h3>
+                                <p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-text-width i-alt"></i></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>CUSTOMIZABLE FONTS</h3>
+                                <p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clear"></div>
+                <div class="line"></div>
+
+                <div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="30" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+
+                    <div class="oc-item"><a href="#"><img src="img/clients/1.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/2.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/3.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/4.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/5.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/6.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/7.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/8.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/9.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/10.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/11.png" alt="Clients"></a></div>
+                    <div class="oc-item"><a href="#"><img src="img/clients/12.png" alt="Clients"></a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
