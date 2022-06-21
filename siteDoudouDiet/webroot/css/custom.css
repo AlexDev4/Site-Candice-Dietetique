@@ -1,8 +1,83 @@
-/* ----------------------------------------------------------------
-	Custom CSS
+.lien-menu{
+	color:#132A13;
+}
+.lien-menu:hover{
+	border: solid;
+	border-radius: 15px;
+	padding: 10px;
+	color: #FFC09F;
+}
 
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Handling Updates
------------------------------------------------------------------*/
+.lien-rdv{
+	font-size: 20px;
+	border: solid 3px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #FFC09F;
+	color: #ffff;
+	transition-property: background-color, color;
+	transition-duration: 0.4s;
+}
+.lien-rdv:hover{
+	background-color: #ffff;
+	color:#FFC09F;
+}
+.btn-rdv-black
+{
+	border: solid, 2px;
+	border-radius: 15px;
+	margin: 50px;
+	padding: 10px 35px 10px 35px;
+	background-color: #132A13;
+	color: #fff;
+	font-size: 30px;
+	opacity: 0.75;
+}
+.btn-rdv-black:hover{
+	background-color:#fff;
+	color:#132A13;
+	opacity: 0.75;
+}
+.btn-rdv-white{
+	border: solid, 2px;
+	border-radius: 15px;
+	margin: 50px;
+	padding: 10px 35px 10px 35px;
+	background-color: #fff;
+	color: #132A13;
+	font-size: 30px;
+	opacity: 0.75;		
+}
+.btn-rdv-white:hover{
+	background-color:#132A13;
+	color:#fff;
+	opacity: 0.75;
+}
 
+.titre-slider-black{
+	color: #132A13;
+	font-size: 40px;
+	border-radius: 20px;
+	padding: 10px;
+	background-color: #fff;
+	opacity: 0.75;
+}
+.titre-slider-white{
+	color: #fff;
+	font-size: 40px;
+	border-radius: 20px;
+	padding: 10px;
+	background-color: #132A13;
+	opacity: 0.75;
+}
+.img-profil{
+	width: 20%;
+	height: auto;
+}
 
+.box-accueil{
+	background-color: #F5F5F5;
+	border-radius: 15px !important;
+    border: solid 0.5px;
+    box-shadow: 5px 5px 12px 0px;
+}

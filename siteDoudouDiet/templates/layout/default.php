@@ -54,31 +54,31 @@
                             <ul class="menu-container">
                                 <li class="menu-item">
                                     <a class="menu-link" href="index.html">
-                                        <div>Accueil</div>
+                                        <div class=lien-menu>Accueil</div>
                                     </a>
                                 <li class="menu-item">
                                     <a class="menu-link" href="#">
-                                        <div>Perte de poids</div>
+                                        <div class=lien-menu>Perte de poids</div>
                                     </a>
                                 <li class="menu-item mega-menu">
                                     <a class="menu-link" href="#">
-                                        <div>Réequilibrage alimentaire</div>
+                                        <div class=lien-menu>Réequilibrage alimentaire</div>
+                                    </a>
+                               <li class="menu-item mega-menu">
+                                    <a class="menu-link" href="#">
+                                        <div class=lien-menu>Education nutritionelle</div>
                                     </a>
                                 <li class="menu-item mega-menu">
                                     <a class="menu-link" href="#">
-                                        <div>Education nutritionelle</div>
-                                    </a>
-                                <li class="menu-item mega-menu">
-                                    <a class="menu-link" href="#">
-                                        <div>Alimentation de l'enfant et de l'adolescent</div>
+                                        <div class=lien-menu>Alimentation de l'enfant</div>
                                     </a>
                                 <li class="menu-item">
                                     <a class="menu-link" href="shop.html">
-                                        <div>Blog & recettes</div>
+                                        <div class=lien-menu>Blog & recettes</div>
                                     </a>
                                 <li class="menu-item mega-menu">
-                                    <a class="menu-link" href="#">
-                                        <div>Prendre rendez-vous</div>
+                                    <a class="menu-link" href="https://www.doctolib.fr/dieteticien/saint-cyr-sur-mer/candice-vivian-latil">
+                                        <div class="lien-rdv">Prendre rendez-vous</div>
                                     </a>
 
                             </ul>
@@ -292,11 +292,10 @@
                 <div class="row col-mb-30">
 
                     <div class="col-md-6 text-center text-md-start">
-                        Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                        Copyrights &copy; Candice VIVIAN-LATIL - Site developpé par Alexis OLIVE.<br>
                     </div>
 
-                    <div class="col-md-6 text-center text-md-end">
+                    <!-- <div class="col-md-6 text-center text-md-end">
                         <div class="d-flex justify-content-center justify-content-md-end">
                             <a href="#" class="social-icon si-small si-borderless si-facebook">
                                 <i class="icon-facebook"></i>
@@ -337,12 +336,9 @@
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
                             </a>
-                        </div>
+                        </div> -->
 
-                        <div class="clear"></div>
-
-                        <i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
-                    </div>
+                        
 
                 </div>
 

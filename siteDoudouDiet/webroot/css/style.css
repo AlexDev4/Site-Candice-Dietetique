@@ -3629,7 +3629,8 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Poppins', sans-serif;
-}
+	transition-property: color;
+	transition-duration: 0.4s;}
 
 .menu-link span {
 	display: none;
@@ -3645,10 +3646,10 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	vertical-align: top;
 }
 
-.menu-item:hover > .menu-link,
+/* .menu-item:hover > .menu-link,
 .menu-item.current > .menu-link {
 	color: #1ABC9C;
-}
+} */
 
 .menu-item.sub-menu > .menu-link > div { }
 
