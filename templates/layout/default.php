@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
+    
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -360,6 +361,11 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="js/functions.js"></script>
+
+    <!-- Font Awesome 
+    ============================================= -->
+    <script src="https://kit.fontawesome.com/2ace45f598.js" crossorigin="anonymous"></script>
+
 
 </body>
 

@@ -83,11 +83,11 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="icon-screen i-alt"></i></a>
+                                    <a href="#"><i class="fa-solid fa-weight-scale"></i></a>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3>Responsive Layout</h3>
-                                    <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                                    <h3>Perte de poids</h3>
+                                    <p>Ma méthode : de l'écoute, un plan diététique construit à deux, du suivi = des résultats !.</p>
                                 </div>
                             </div>
                         </div>
@@ -95,11 +95,11 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="icon-eye i-alt"></i></a>
+                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3>Retina Ready Graphics</h3>
-                                    <p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
+                                    <h3>Réequilibrage alimentaire</h3>
+                                    <p>Indissociable d'une perte de poids, il est primordial pour pereniser ce qui a été mis en place.</p>
                                 </div>
                             </div>
                         </div>
@@ -107,11 +107,11 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="icon-beaker i-alt"></i></a>
+                                    <a href="#"><i class="fa-solid fa-apple-whole"></i></a>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3>Powerful Performance</h3>
-                                    <p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                                    <h3>Education nutritionnelle</h3>
+                                    <p>Atelier d'éducation à la nutrition pour les enfants. Jeux, histoires, quizz, etc. Seul ou en groupe.</p>
                                 </div>
                             </div>
                         </div>
@@ -119,11 +119,11 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="icon-stack i-alt"></i></a>
+                                    <a href="#"><i class="fa-solid fa-hands-holding-child"></i></a>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3>Premium Sliders Included</h3>
-                                    <p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
+                                    <h3>Alimentation de l'enfant et de l'adolescent</h3>
+                                    <p>Parceque les bonnes habitudes alimentaires se prennent dès le plus jeune âge, je vous propose des consultations d'éducation à la nutrition. Seul ou en groupe.</p>
                                 </div>
                             </div>
                         </div>
@@ -131,11 +131,11 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="icon-tint i-alt"></i></a>
+                                    <a href="#"><i class="fa-solid fa-utensils"></i></a>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3>Unlimited Color Options</h3>
-                                    <p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
+                                    <h3>Blog et recettes</h3>
+                                    <p>Toutes les semaines, découvrez des recettes appétissantes, diététique ou plaisir !</p>
                                 </div>
                             </div>
                         </div>
@@ -143,11 +143,11 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="icon-text-width i-alt"></i></a>
+                                    <a href="#"><i class="fa-solid fa-calendar"></i></a>
                                 </div>
                                 <div class="fbox-content">
-                                    <h3>CUSTOMIZABLE FONTS</h3>
-                                    <p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
+                                    <h3>Prendre rendez-vous</h3>
+                                    <p>Consultations tous les jours de 9h a 19h et le samedi matin de 9h a 12h au cabinet ou en téléconsultation sécurisée.</p>
                                 </div>
                             </div>
                         </div>

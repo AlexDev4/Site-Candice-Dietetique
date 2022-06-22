@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'hello_avocadoregular';
+    src: url('font/hello_avocado-webfont.woff2') format('woff2'),
+         url('font/hello_avocado-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .lien-menu{
 	color:#132A13;
 }
@@ -90,6 +98,9 @@
     margin-right: calc(-0.5 * var(--bs-gutter-x));
     margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
 .phrase-accroche{
-	padding: 90px;
+	padding: 15px;
+	font-size: 20px;
+	font-family: 'hello_avocadoregular';
 }
