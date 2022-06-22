@@ -70,9 +70,11 @@
             <div class="container clearfix">
 
                 <div class="promo box-accueil p-5 bottommargin-lg border-solid">
-                    <div class="row align-items-center">
-                        <img class="img-profil" src="img\accueil\profil.png">
-                        <p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales nibh et turpis ultrices, a iaculis velit aliquam. 
+                    <div class="row2 align-items-center">
+                        <img class="img-profil" src="img\accueil\profil.png"> 
+                        <p class="phrase-accroche">Candice VIVIAN-LATIL, votre diététicienne nutritionniste à Saint Cyr sur Mer et La Ciotat</p>
+                        
+                        <pLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales nibh et turpis ultrices, a iaculis velit aliquam. 
                         <br>Pellentesque eleifend facilisis augue. Nullam dapibus libero augue, in pulvinar nisi faucibus euismod. Maecenas at orci nec mauris euismod rutrum. Sed ac purus feugiat, tempor augue ac, luctus turpis. Donec turpis augue, faucibus eu auctor ut, imperdiet ut risus. Nunc et turpis nec odio sodales venenatis. Donec aliquam varius dolor, sed placerat justo venenatis et. Suspendisse commodo, ipsum sit amet rhoncus luctus, lacus augue sagittis lorem, non tempor urna quam sit amet risus. Maecenas nibh mauris, iaculis vel tristique sit amet, malesuada vel augue. Aenean mollis felis augue, ac rutrum enim egestas quis. Duis ornare tristique nisl maximus rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ullamcorper tempor risus, nec posuere mi porta vitae. Sed turpis quam, varius eget urna ut, varius venenatis augue. Donec ultricies ultricies urna cursus blandit. Sed elit diam, malesuada eu semper sit amet, dictum eu felis. Donec tincidunt id metus et sollicitudin. Nulla id ipsum turpis. Sed ultricies diam ut quam vulputate mattis. Fusce consequat, lectus sed tincidunt vulputate, sapien erat egestas turpis, quis dapibus nisl ante quis risus. </div>
                     </div>
 
