@@ -14317,8 +14317,8 @@ body:not(.device-touch) #gotoTop {
 
 #footer {
 	position: relative;
-	background-color: #EEE;
-	border-top: 5px solid rgba(0,0,0,0.2);
+	background-color: #fff;
+	border-top: 3px solid  #F5F5F5;
 }
 
 @media (min-width: 992px) {
@@ -14343,12 +14343,12 @@ body:not(.device-touch) #gotoTop {
 
 #footer .footer-widgets-wrap {
 	position: relative;
-	padding: 80px 0;
+	padding: 30px 0;
 }
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
+	background-color: #FFC09F;
 	font-size: 0.875rem;
 	line-height: 1.8;
 }

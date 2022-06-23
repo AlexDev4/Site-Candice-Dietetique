@@ -156,21 +156,19 @@
 
                     <div class="clear"></div>
                     <div class="line"></div>
+                    
+                    <h4 class=titre-slider-bas>Quelques fruits et légumes de saisons...</h4>
 
                     <div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="30" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
-                        <div class="oc-item"><a href="#"><img src="img/clients/1.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/2.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/3.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/4.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/5.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/6.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/7.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/8.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/9.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/10.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/11.png" alt="Clients"></a></div>
-                        <div class="oc-item"><a href="#"><img src="img/clients/12.png" alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/aubergine.png" title="aubergine"alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/poivron.png" title="poivron" alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/radis.png" title="radis" alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/Tomate.png" title="tomate" alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/Cerise.png" title="cerise" alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/melon.png" title="melon"alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/pasteque.png" title="pasteque"alt="Clients"></a></div>
+                        <div class="oc-item"><img src="img/saison/peche.png" title="peche"alt="Clients"></a></div>
                     </div>
 
                 </div>

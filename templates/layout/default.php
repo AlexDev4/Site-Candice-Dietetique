@@ -4,7 +4,7 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SemiColonWeb" />
+    <meta name="AlexDev4" content="SemiColonWeb" />
 
     <!-- Stylesheets
 	============================================= -->
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-    
     <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,73 +30,48 @@
 
     <!-- Document Wrapper
 	============================================= -->
-    <div id="wrapper" class="clearfix">
 
-        <!-- Header
+    <!-- Header
 		============================================= -->
-        <header id="header" class="full-header">
-            <div id="header-wrap">
-                <div class="container">
-                    <div class="header-row">
-
-                        <div id="primary-menu-trigger">
-                            <svg class="svg-trigger" viewBox="0 0 100 100">
-                                <path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
-                                <path d="m 30,50 h 40"></path>
-                                <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
-                            </svg>
-                        </div>
-
-                        <!-- Primary Navigation
-						============================================= -->
-                        <nav class="primary-menu">
-
-                            <ul class="menu-container">
-                                <li class="menu-item">
-                                    <a class="menu-link" href="index.html">
-                                        <div class=lien-menu>Accueil</div>
-                                    </a>
-                                <li class="menu-item">
-                                    <a class="menu-link" href="#">
-                                        <div class=lien-menu>Perte de poids</div>
-                                    </a>
-                                <li class="menu-item mega-menu">
-                                    <a class="menu-link" href="#">
-                                        <div class=lien-menu>Réequilibrage alimentaire</div>
-                                    </a>
-                               <li class="menu-item mega-menu">
-                                    <a class="menu-link" href="#">
-                                        <div class=lien-menu>Education nutritionelle</div>
-                                    </a>
-                                <li class="menu-item mega-menu">
-                                    <a class="menu-link" href="#">
-                                        <div class=lien-menu>Alimentation de l'enfant</div>
-                                    </a>
-                                <li class="menu-item">
-                                    <a class="menu-link" href="shop.html">
-                                        <div class=lien-menu>Blog & recettes</div>
-                                    </a>
-                                <li class="menu-item mega-menu">
-                                    <a class="menu-link" href="https://www.doctolib.fr/dieteticien/saint-cyr-sur-mer/candice-vivian-latil">
-                                        <div class="lien-rdv">Prendre rendez-vous</div>
-                                    </a>
-
-                            </ul>
-                    </div>
-                </div>
+    <header id="header" class="full-header">
+        <div id="header-wrap">
+            <div class="container">
+                <div class="header-row">
+<!--                     <nav class="primary-menu">
+ -->                        <ul class="menu-container">
+                            <li class="menu-item">
+                                <a class="menu-link" href="index.html">
+                                    <div class=lien-menu>Accueil</div>
+                                </a>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <div class=lien-menu>Perte de poids</div>
+                                </a>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <div class=lien-menu>Réequilibrage alimentaire</div>
+                                </a>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <div class=lien-menu>Education nutritionelle</div>
+                                </a>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <div class=lien-menu>Alimentation de l'enfant</div>
+                                </a>
+                            <li class="menu-item">
+                                <a class="menu-link" href="shop.html">
+                                    <div class=lien-menu>Blog & recettes</div>
+                                </a>
+                            <li class="menu-item">
+                                <a class="menu-link" href="https://www.doctolib.fr/dieteticien/saint-cyr-sur-mer/candice-vivian-latil" target="_blank">
+                                    <div class="lien-rdv">Prendre rendez-vous</div>
+                                </a>
+                        </ul>
+<!--                     </nav>
+ -->                </div>
             </div>
-
-
-            </nav><!-- #primary-menu end -->
-
-            <form class="top-search-form" action="search.html" method="get">
-                <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
-            </form>
-
-    </div>
-    </div>
-    </div>
-    <div class="header-wrap-clone"></div>
+        </div>
     </header><!-- #header end -->
 
 
@@ -105,253 +79,81 @@
         <?= $this->Flash->render() ?>
         <?= $this->fetch('content') ?>
     </main>
-
-    <footer id="footer" class="dark">
+    <footer class="footer">
+                    <div class="line"></div>
+        <div class="footer-wrap pt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 offset-xl-1 col-md-6">
+                        <div class="f-maincontent text-center pt-0">
+                            <picture>
+                                <img class="logo-footer" src="img/logo/Logo.png"
+                                    alt="Candice VIVIAN-LATIL, Diététicienne-nutritionniste | Saint Cyr sur Mer | La Ciotat" title="Candice VIVIAN-LATIL, Diététicienne-nutritionniste | Saint Cyr sur Mer | La Ciotat">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 ps-lg-4">
+                        <div class="navigation-footer">
+                            <div class="h3">Navigation</div>
+                            <ul class=>
+                            <li><i class="fa-solid fa-house"></i><a href="#"> Accueil</a></li>
+                                        <li><i class="fa-solid fa-weight-scale"></i><a href="#"> Perte de poids</a></li>
+                                        <li><i class="fa-solid fa-scale-balanced"></i><a href="#"> Réequilibrage alimentaire</a></li>
+                                        <li><i class="fa-solid fa-apple-whole"></i><a href="#"> Education nutritionnelle</a></li>
+                                        <li><i class="fa-solid fa-hands-holding-child"></i><a href="#"> Alimentation de l'enfant et de l'adolescent</a></li>
+                                        <li><i class="fa-solid fa-utensils"></i><a href="#"> Blog et recettes</a></li>
+                                        <li><i class="fa-solid fa-calendar"></i><a href="#"> Prendre rendez-vous</a></li>
+                                    </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6">
+                        <div class="navigation-footer">
+                        <div class="h3">Informations utiles</div>
+                            <ul class="d-flex flex-column info-client">
+                                <li><i class="fa-solid fa-lemon"></i>Candice VIVIAN-LATIL</li>
+                                <li><i class="fa-solid fa-mobile-screen"></i> 07.86.66.05.43</li>
+                                <li><i class="fa-solid fa-square-envelope"></i>contact@candice-vivian-latil-dieteticienne.fr</li>
+                                <li><i class="fa-solid fa-thumbtack"></i>2 promenades de la Rambla - 83270 St Cyr sur Mer <br>
+                                    <i>Parkings gratuits à proximité</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 px-lg-5">
+                        <div class="ft-lists">
+                            <div class="h3">Newsletter</div>
+                            <p>Inscrivez-vous à ma newsletter pour recevoir des conseils, des recettes et bien plus !
+                            </p>
+                                <?= $this->Form->create(null, ["url" => "/pages/newsletter"] )?>
+                                    <input type="email" name="mail" class="form-news mt-3 p-3" id="email"
+                                        placeholder="Votre E-mail" />
+                                        <button type=submit class="btn-news">S’inscrire</button>
+                                        <?= $this->Form->end() ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyrights">
         <div class="container">
 
-            <!-- Footer Widgets
-				============================================= -->
-            <div class="footer-widgets-wrap">
+            <div class="row col-mb-30">
 
-                <div class="row col-mb-50">
-                    <div class="col-lg-8">
-
-                        <div class="row col-mb-50">
-                            <div class="col-md-4">
-
-                                <div class="widget clearfix">
-
-                                    <img src="images/footer-widget-logo.png" alt="Image" class="footer-logo">
-
-                                    <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
-
-                                    <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-                                        <address>
-                                            <strong>Headquarters:</strong><br>
-                                            795 Folsom Ave, Suite 600<br>
-                                            San Francisco, CA 94107<br>
-                                        </address>
-                                        <abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-                                        <abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-                                        <abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="widget widget_links clearfix">
-
-                                    <h4>Blogroll</h4>
-
-                                    <ul>
-                                        <li><a href="https://codex.wordpress.org/">Documentation</a></li>
-                                        <li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-                                        <li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
-                                        <li><a href="https://wordpress.org/support/">Support Forums</a></li>
-                                        <li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
-                                        <li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
-                                        <li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <div class="widget clearfix">
-                                    <h4>Recent Posts</h4>
-
-                                    <div class="posts-sm row col-mb-30" id="post-list-footer">
-                                        <div class="entry col-12">
-                                            <div class="grid-inner row">
-                                                <div class="col">
-                                                    <div class="entry-title">
-                                                        <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>10th July 2021</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="entry col-12">
-                                            <div class="grid-inner row">
-                                                <div class="col">
-                                                    <div class="entry-title">
-                                                        <h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>10th July 2021</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="entry col-12">
-                                            <div class="grid-inner row">
-                                                <div class="col">
-                                                    <div class="entry-title">
-                                                        <h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>10th July 2021</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4">
-
-                        <div class="row col-mb-50">
-                            <div class="col-md-4 col-lg-12">
-                                <div class="widget clearfix" style="margin-bottom: -20px;">
-
-                                    <div class="row">
-                                        <div class="col-lg-6 bottommargin-sm">
-                                            <div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-                                            <h5 class="mb-0">Total Downloads</h5>
-                                        </div>
-
-                                        <div class="col-lg-6 bottommargin-sm">
-                                            <div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-                                            <h5 class="mb-0">Clients</h5>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-5 col-lg-12">
-                                <div class="widget subscribe-widget clearfix">
-                                    <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
-                                    <div class="widget-subscribe-form-result"></div>
-                                    <form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
-                                        <div class="input-group mx-auto">
-                                            <div class="input-group-text"><i class="icon-email2"></i></div>
-                                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-                                            <button class="btn btn-success" type="submit">Subscribe</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-lg-12">
-                                <div class="widget clearfix" style="margin-bottom: -20px;">
-
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
-                                            <a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
-                                                <i class="icon-facebook"></i>
-                                                <i class="icon-facebook"></i>
-                                            </a>
-                                            <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 clearfix">
-                                            <a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
-                                                <i class="icon-rss"></i>
-                                                <i class="icon-rss"></i>
-                                            </a>
-                                            <a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
+                <div class="copyright-text d-flex flex-wrap justify-content-xl-between justify-content-start">
+                    <p>Copyrights &copy; <?php echo date("Y") ?> Candice VIVIAN-LATIL - Site developpé par <a href=https://github.com/AlexDev4 target="_blank">Alexis OLIVE</a>.</p>
+                    <div class="copyright-links"><a href="#">CGU</a> / <a href="#">RGPD</a></div>
                 </div>
+            </div>
 
-            </div><!-- .footer-widgets-wrap end -->
 
         </div>
-
-        <!-- Copyrights
-			============================================= -->
-        <div id="copyrights">
-            <div class="container">
-
-                <div class="row col-mb-30">
-
-                    <div class="col-md-6 text-center text-md-start">
-                        Copyrights &copy; Candice VIVIAN-LATIL - Site developpé par Alexis OLIVE.<br>
-                    </div>
-
-                    <!-- <div class="col-md-6 text-center text-md-end">
-                        <div class="d-flex justify-content-center justify-content-md-end">
-                            <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-gplus">
-                                <i class="icon-gplus"></i>
-                                <i class="icon-gplus"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                                <i class="icon-pinterest"></i>
-                                <i class="icon-pinterest"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
-                                <i class="icon-vimeo"></i>
-                                <i class="icon-vimeo"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-github">
-                                <i class="icon-github"></i>
-                                <i class="icon-github"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
-                                <i class="icon-yahoo"></i>
-                                <i class="icon-yahoo"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
-                        </div> -->
-
-                        
-
-                </div>
-
-            </div>
-        </div><!-- #copyrights end -->
-    </footer><!-- #footer end -->
-
-    </div><!-- #wrapper end -->
+    </div><!-- #copyrights end -->
+    </footer>
+    
 
     <!-- Go To Top
 	============================================= -->
-    <div id="gotoTop" class="icon-angle-up"></div>
+    <div id="gotoTop"><i class="fa-solid fa-arrow-up"></i></div>
 
     <!-- JavaScripts
 	============================================= -->

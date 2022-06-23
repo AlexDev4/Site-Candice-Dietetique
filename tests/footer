@@ -1,0 +1,115 @@
+<footer id="footer" class="footer-1">
+        <div class="container">
+
+            <!-- Footer Widgets
+				============================================= -->
+            <div class="footer-widgets-wrap">
+
+                <div class="row col-mb-50">
+                    <div class="col-lg-8">
+
+                        <div class="row col-mb-10">
+                            <div class="col-md-4">
+
+                                <div class="widget clearfix">
+
+                                    <p><i class="fa-solid fa-lemon"></i> Candice VIVIAN-LATIL,<br> votre diététicienne sur Saint Cyr sur Mer et La Ciotat.</p>
+
+                                    <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+                                        <address>
+                                            <strong><i class="fa-solid fa-location-pin"></i> Venir au cabinet:</strong><br>
+                                            2 Promenade de la rambla<br>
+                                            83270 - Saint Cyr sur Mer<br>
+                                        </address>
+                                        <abbr title="Phone Number"><i class="fa-solid fa-mobile-screen"></i><strong> Téléphone:</strong></abbr> 07.86.66.05.43<br>
+                                        <abbr title="Email Address"><i class="fa-solid fa-square-envelope"></i><strong> Email:</strong></abbr> contact@candice-vivian-latil-dieteticienne.fr
+                                        <p></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <div class="navigation-footer">
+
+                                    <h4>Navigation</h4>
+
+                                    <ul>
+                                        <li><i class="fa-solid fa-house"></i><a href="#"> Accueil</a></li>
+                                        <li><i class="fa-solid fa-weight-scale"></i><a href="#"> Perte de poids</a></li>
+                                        <li><i class="fa-solid fa-scale-balanced"></i><a href="#"> Réequilibrage alimentaire</a></li>
+                                        <li><i class="fa-solid fa-apple-whole"></i><a href="#"> Education nutritionnelle</a></li>
+                                        <li><i class="fa-solid fa-hands-holding-child"></i><a href="#"> Alimentation de l'enfant et de l'adolescent</a></li>
+                                        <li><i class="fa-solid fa-utensils"></i><a href="#"> Blog et recettes</a></li>
+                                        <li><i class="fa-solid fa-calendar"></i><a href="#"> Prendre rendez-vous</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="row col-mb-50">
+
+                        <div class="col-md-5 col-lg-12">
+									<div class="widget subscribe-widget clearfix">
+										<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+										<div class="widget-subscribe-form-result"></div>
+										<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+											<div class="input-group mx-auto">
+												<div class="input-group-text"><i class="icon-email2"></i></div>
+												<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+												<button class="btn btn-success" type="submit">Subscribe</button>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<div class="col-md-3 col-lg-12">
+									<div class="widget clearfix" style="margin-bottom: -20px;">
+
+										<div class="row">
+											<div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
+												<a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+													<i class="icon-facebook"></i>
+													<i class="icon-facebook"></i>
+												</a>
+												<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+											</div>
+											<div class="col-6 col-md-12 col-lg-6 clearfix">
+												<a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
+													<i class="icon-rss"></i>
+													<i class="icon-rss"></i>
+												</a>
+												<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+                            
+                        </div>
+
+                    </div><!-- .footer-widgets-wrap end -->
+
+                </div>
+
+    </footer><!-- #footer end -->
+    <div id="copyrights">
+        <div class="container">
+
+            <div class="row col-mb-30">
+
+                <div class="col-md-6 text-center text-md-start">
+                    Copyrights &copy; Candice VIVIAN-LATIL - Site developpé par <a href=https://github.com/AlexDev4 target="_blank">Alexis OLIVE</a>.<br>
+                    <div class="copyright-links"><a href="#">CGU</a> / <a href="#">RGPD</a></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div><!-- #copyrights end -->
