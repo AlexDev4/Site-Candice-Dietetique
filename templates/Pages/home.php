@@ -157,7 +157,7 @@
                     <div class="clear"></div>
                     <div class="line"></div>
                     
-                    <h4 class=titre-slider-bas>Quelques fruits et légumes de saisons...</h4>
+                    <h4 class=titre-slider-bas style="padding-0">Quelques fruits et légumes de saisons...</h4>
 
                     <div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="30" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
