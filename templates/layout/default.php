@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img\logo\android-chrome-512x512.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title><?= !empty($this->fetch('title')) ? $this->fetch('title') : '' ?></title>
