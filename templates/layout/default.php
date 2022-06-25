@@ -125,7 +125,7 @@
                             <p>Inscrivez-vous à ma newsletter pour recevoir des conseils, des recettes et bien plus !
                             </p>
                                 <?= $this->Form->create(null, ["url" => "/pages/newsletter"] )?>
-                                    <input type="email" name="mail" class="form-news mt-3 p-3" id="email"
+                                    <input type="email" name="mail" class="form-control mt-3 p-3" id="email"
                                         placeholder="Votre E-mail" />
                                         <button type=submit class="btn-news">S’inscrire</button>
                                         <?= $this->Form->end() ?>

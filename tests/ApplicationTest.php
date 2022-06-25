@@ -123,7 +123,17 @@ class Application extends BaseApplication implements AuthenticationServiceProvid
      * @return void
      * @link https://book.cakephp.org/4/en/development/dependency-injection.html#dependency-injection
      */
-    
+    public function services(ContainerInterface $container): void
+    {
+    }
+
+    /**
+     * Bootstrapping for CLI application.
+     *
+     * That is when running commands.
+     *
+     * @return void
+     */
     protected function bootstrapCli(): void
     {
         $this->addOptionalPlugin('Cake/Repl');

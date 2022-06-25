@@ -17,6 +17,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\EventInterface;
 
 /**
  * Application Controller
@@ -40,14 +41,27 @@ class AppController extends Controller
     public function initialize(): void
     {
         parent::initialize();
-
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
 
+        if($this->getRequest()->getParam('prefix') === 'Backoffice'){
+            $this->loadComponent('Authentication.Authentication');
+            //$this->viewBuilder()->setLayout('backoffice');
+        }
         /*
          * Enable the following component for recommended CakePHP form protection settings.
          * see https://book.cakephp.org/4/en/controllers/components/form-protection.html
          */
         //$this->loadComponent('FormProtection');
+    }
+
+    public function beforeFilter(\Cake\Event\EventInterface $event)
+    {
+        parent::beforeFilter($event);
+        
+        if($this->getRequest()->getParam('prefix') === 'Backoffice'){
+            $this->Authentication->addUnauthenticatedActions(['index', 'view']);
+
+        }
     }
 }
