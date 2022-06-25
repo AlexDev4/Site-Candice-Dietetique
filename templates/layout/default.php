@@ -40,27 +40,27 @@
 <!--                     <nav class="primary-menu">
  -->                        <ul class="menu-container">
                             <li class="menu-item">
-                                <a class="menu-link" href="index.html">
+                                <a class="menu-link" href="<?= $this->Url->build('/home') ?>">
                                     <div class=lien-menu>Accueil</div>
                                 </a>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="<?= $this->Url->build('/perte-de-poids') ?>">
                                     <div class=lien-menu>Perte de poids</div>
                                 </a>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="<?= $this->Url->build('/reequilibrage-alimentaire') ?>">
                                     <div class=lien-menu>Réequilibrage alimentaire</div>
                                 </a>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="<?= $this->Url->build('/education-a-la-nutrition') ?>">
                                     <div class=lien-menu>Education nutritionelle</div>
                                 </a>
                             <li class="menu-item">
-                                <a class="menu-link" href="#">
+                                <a class="menu-link" href="<?= $this->Url->build('/alimentation-enfant-adolescent') ?>">
                                     <div class=lien-menu>Alimentation de l'enfant</div>
                                 </a>
                             <li class="menu-item">
-                                <a class="menu-link" href="shop.html">
+                                <a class="menu-link" href="<?= $this->Url->build('/blog-recettes') ?>">
                                     <div class=lien-menu>Blog & recettes</div>
                                 </a>
                             <li class="menu-item">
@@ -96,13 +96,13 @@
                         <div class="navigation-footer">
                             <div class="h3">Navigation</div>
                             <ul class=>
-                            <li><i class="fa-solid fa-house"></i><a href="#"> Accueil</a></li>
-                                        <li><i class="fa-solid fa-weight-scale"></i><a href="#"> Perte de poids</a></li>
-                                        <li><i class="fa-solid fa-scale-balanced"></i><a href="#"> Réequilibrage alimentaire</a></li>
-                                        <li><i class="fa-solid fa-apple-whole"></i><a href="#"> Education nutritionnelle</a></li>
-                                        <li><i class="fa-solid fa-hands-holding-child"></i><a href="#"> Alimentation de l'enfant et de l'adolescent</a></li>
-                                        <li><i class="fa-solid fa-utensils"></i><a href="#"> Blog et recettes</a></li>
-                                        <li><i class="fa-solid fa-calendar"></i><a href="#"> Prendre rendez-vous</a></li>
+                            <li><i class="fa-solid fa-house"></i><a href="<?= $this->Url->build('/home') ?>"> Accueil</a></li>
+                                        <li><i class="fa-solid fa-weight-scale"></i><a href="<?= $this->Url->build('/perte-de-poids') ?>"> Perte de poids</a></li>
+                                        <li><i class="fa-solid fa-scale-balanced"></i><a href="<?= $this->Url->build('/reequilibrage-alimentaire') ?>"> Réequilibrage alimentaire</a></li>
+                                        <li><i class="fa-solid fa-apple-whole"></i><a href="<?= $this->Url->build('/education-a-la-nutrition') ?>"> Education nutritionnelle</a></li>
+                                        <li><i class="fa-solid fa-hands-holding-child"></i><a href="<?= $this->Url->build('/alimentation-enfant-adolescent') ?>"> Alimentation de l'enfant et de l'adolescent</a></li>
+                                        <li><i class="fa-solid fa-utensils"></i><a href="<?= $this->Url->build('/blog-recettes') ?>"> Blog et recettes</a></li>
+                                        <li><i class="fa-solid fa-calendar"></i><a href="https://www.doctolib.fr/dieteticien/saint-cyr-sur-mer/candice-vivian-latil" target="_blank"> Prendre rendez-vous</a></li>
                                     </ul>
                         </div>
                     </div>

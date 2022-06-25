@@ -83,7 +83,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="fa-solid fa-weight-scale"></i></a>
+                                    <a href="<?= $this->Url->build('/perte-de-poids') ?>"><i class="fa-solid fa-weight-scale"></i></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Perte de poids</h3>
@@ -95,7 +95,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+                                    <a href="<?= $this->Url->build('/reequilibrage-alimentaire') ?>"><i class="fa-solid fa-scale-balanced"></i></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Réequilibrage alimentaire</h3>
@@ -107,7 +107,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="fa-solid fa-apple-whole"></i></a>
+                                    <a href="<?= $this->Url->build('/education-a-la-nutrition') ?>"><i class="fa-solid fa-apple-whole"></i></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Education nutritionnelle</h3>
@@ -119,7 +119,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="fa-solid fa-hands-holding-child"></i></a>
+                                    <a href="<?= $this->Url->build('/alimentation-enfant-adolescent') ?>"><i class="fa-solid fa-hands-holding-child"></i></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Alimentation de l'enfant et de l'adolescent</h3>
@@ -131,7 +131,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="fa-solid fa-utensils"></i></a>
+                                    <a href="<?= $this->Url->build('/blog-recettes') ?>"><i class="fa-solid fa-utensils"></i></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Blog et recettes</h3>
@@ -143,7 +143,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="feature-box fbox-effect">
                                 <div class="fbox-icon">
-                                    <a href="#"><i class="fa-solid fa-calendar"></i></a>
+                                    <a href="https://www.doctolib.fr/dieteticien/saint-cyr-sur-mer/candice-vivian-latil" target="_blank"><i class="fa-solid fa-calendar"></i></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3>Prendre rendez-vous</h3>

@@ -43,7 +43,12 @@ class PagesController extends AppController
      *   be found and not in debug mode.
      * @throws \Cake\View\Exception\MissingTemplateException In debug mode.
      */
-    public function display(string ...$path): ?Response
+
+    public function home()
+    {
+
+    }
+    /* public function display(string ...$path): ?Response
     {
         if (!$path) {
             return $this->redirect('/');
@@ -69,5 +74,28 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
+    } */
+    
+    public function perteDePoids()
+    {
+
+    }
+
+    public function reequilibrageAlimentaire()
+    {
+
+    }
+
+    public function educationALaNutrition()
+    {
+
+    }
+    public function alimentationEnfantAdolescent()
+    {
+
+    }
+    public function blogRecettes()
+    {
+
     }
 }
