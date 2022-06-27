@@ -26,10 +26,12 @@ use Cake\Routing\RouteBuilder;
 
 return static function (RouteBuilder $routes) {
     $routes->setRouteClass(DashedRoute::class);
-    $routes->scope('/', function (RouteBuilder $builder) {
-        $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-        $builder->connect('/:action', ['controller' => 'Pages']);
 
+    $routes->scope('/', function (RouteBuilder $builder) {
+
+        $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+
+        
         $builder->connect('/backoffice', ['controller' => 'Users', 'action' => 'login', 'prefix' => 'Backoffice']);
         $builder->connect('/backoffice/deconnexion', ['controller' => 'Users', 'action' => 'logout', 'prefix' => 'Backoffice']);
         $builder->prefix('Backoffice', ['param' => 'value'], function ($routes) {

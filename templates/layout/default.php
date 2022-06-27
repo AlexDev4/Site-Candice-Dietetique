@@ -38,8 +38,8 @@
         <div id="header-wrap">
             <div class="container">
                 <div class="header-row">
-<!--                     <nav class="primary-menu">
- -->                        <ul class="menu-container">
+                    <nav class="primary-menu">
+                        <ul class="menu-container">
                             <li class="menu-item">
                                 <a class="menu-link" href="<?= $this->Url->build('/home') ?>">
                                     <div class=lien-menu>Accueil</div>
@@ -69,8 +69,8 @@
                                     <div class="lien-rdv">Prendre rendez-vous</div>
                                 </a>
                         </ul>
-<!--                     </nav>
- -->                </div>
+                  </nav>
+                 </div>
             </div>
         </div>
     </header><!-- #header end -->

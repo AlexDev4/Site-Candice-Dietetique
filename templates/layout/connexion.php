@@ -7,7 +7,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Bienvenu Candice. Veuillez vous connecter</title>
+    <title>Se connecter</title>
     <link rel="apple-touch-icon" href="bo/assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="bo/assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="bo/assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="bo/assets/css/plugins/forms/form-validation.css">
     <link rel="stylesheet" type="text/css" href="bo/assets/css/pages/authentication.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
 </head>
 <body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">

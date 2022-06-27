@@ -4,6 +4,7 @@ namespace App\Controller\Backoffice;
 
 use App\Controller\AppController;
 use Cake\Event\EventInterface;
+use App\Model\Entity\User;
 
 class UsersController extends AppController
 {
@@ -18,6 +19,7 @@ class UsersController extends AppController
 
     public function login()
     {
+      
         $this->viewBuilder()->setLayout('connexion');
         $this->request->allowMethod(['get', 'post']);
         $result = $this->Authentication->getResult();
