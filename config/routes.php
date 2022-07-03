@@ -30,7 +30,7 @@ return static function (RouteBuilder $routes) {
     $routes->scope('/', function (RouteBuilder $builder) {
 
         $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
+        $builder->connect('/{action}', ['controller' => 'Pages', 'action' => '{action}']);
         
         $builder->connect('/backoffice', ['controller' => 'Users', 'action' => 'login', 'prefix' => 'Backoffice']);
         $builder->connect('/backoffice/deconnexion', ['controller' => 'Users', 'action' => 'logout', 'prefix' => 'Backoffice']);
