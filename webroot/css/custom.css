@@ -89,6 +89,7 @@
 .img-profil{
 	width: 20%;
 	height: auto;
+	margin-left: 40%;
 }
 
 .box-accueil{
@@ -111,6 +112,7 @@
 	padding: 15px;
 	font-size: 20px;
 	font-family: 'hello_avocadoregular';
+	text-align: center;
 }
 .titre-slider-bas{
 	display: flex;
@@ -133,6 +135,10 @@
 .navigation-footer a:hover{
 	color: #FFC09F;
 	text-decoration: underline #FFC09F ;
+}
+.navigation-footer a:active{
+	color: #fff;
+	background-color: #FFC09F;
 }
 .logo-footer{
 	width: 100%;
@@ -163,4 +169,24 @@
     margin: 5px, 5px, 0 0;
     padding: 2px, 2px, 2px, 2px;
     background-color: #fff;
+}
+.img-pages-presta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.img-presta{
+	width: 800px;
+	height: auto;
+	margin-bottom: 15px;
+}
+.titre-presta{
+	font-size: 50px;
+}
+.img-cabinet{
+	margin: 40px;
+}
+.texte-presta{
+	margin-left: 60px;
+	margin-right: 60px;
 }
