@@ -85,7 +85,7 @@
         <div class="footer-wrap pt-3">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 offset-xl-1 col-md-6">
+                    <div class="col-lg-2 offset-xl-1 col-md-8">
                         <div class="f-maincontent text-center pt-0">
                             <picture>
                                 <img class="logo-footer" src="img/logo/Logo.png"
@@ -112,8 +112,8 @@
                         <div class="h3">Informations utiles</div>
                             <ul class="d-flex flex-column info-client">
                                 <li><i class="fa-solid fa-lemon"></i>Candice VIVIAN-LATIL</li>
-                                <li><i class="fa-solid fa-mobile-screen"></i> 07.86.66.05.43</li>
-                                <li><i class="fa-solid fa-square-envelope"></i>contact@candice-vivian-latil-dieteticienne.fr</li>
+                                <li><i class="fa-solid fa-mobile-screen"></i><a href="tel:+33786660543">07.86.66.05.43</li>
+                                <li><i class="fa-solid fa-square-envelope"></i><a href="mailto:contact@candice-vivian-latil-dieteticienne.fr">contact@candice-vivian-latil-dieteticienne.fr</a></li>
                                 <li><i class="fa-solid fa-thumbtack"></i>2 promenades de la Rambla - 83270 St Cyr sur Mer <br>
                                     <i>Parkings gratuits à proximité</i>
                                 </li>

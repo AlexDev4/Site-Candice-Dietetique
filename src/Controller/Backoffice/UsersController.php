@@ -20,12 +20,13 @@ class UsersController extends AppController
     public function login()
     {
       
+        $user = $this->Users->find()->first();
+        $this->$user->password('toto');
         $this->viewBuilder()->setLayout('connexion');
         $this->request->allowMethod(['get', 'post']);
         $result = $this->Authentication->getResult();
         if ($result->isValid()) {
             return $this->redirect('/backoffice/dashboard');
-            return $this->redirect($redirect);
         }
         if ($this->request->is('post') && !$result->isValid()) {
             $this->Flash->error(__('Votre identifiant ou votre mot de passe est incorrect.'));

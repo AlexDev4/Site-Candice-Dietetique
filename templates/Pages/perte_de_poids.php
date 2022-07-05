@@ -30,7 +30,7 @@
 
         </div>
         <div class="col-4">
-            <img src="img/banniere-verticale.jpg" alt="banniere verticale fruits et legumes" alt="banniere-verticale-fruits-legumes">
+            <img src="img/banniere-verticale.jpg" class="banniere-verticale" alt="banniere verticale fruits et legumes" alt="banniere-verticale-fruits-legumes">
 
 
         </div>

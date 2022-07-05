@@ -143,6 +143,8 @@
 .logo-footer{
 	width: 100%;
 	height: auto;
+	margin-top: 100px;
+	margin-right: 50px;
 }
 .btn-news{
 	background-color: #FFC09F;
@@ -187,6 +189,11 @@
 	margin: 40px;
 }
 .texte-presta{
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 100px;
+    margin-right: 90px;
+}
+.banniere-verticale{
+	width: auto;
+	height: 75%;
+	opacity: 0.5;
 }

@@ -13,7 +13,7 @@
 
     </div>
     <section id="content">
-        <div class="content-wrap">
+        <div class="content">
             <div class="container clearfix">
                 <div class="row">
                     <div class="col-6 promo box-accueil p-5 bottommargin-lg border-solid">
@@ -21,9 +21,9 @@
                             <img class="img-profil" src="img\accueil\profil.png">
                             <p class="phrase-accroche">Candice VIVIAN-LATIL, votre diététicienne nutritionniste à Saint Cyr sur Mer et La Ciotat</p>
 
-                            <p>Adresse : 2 Promenade de la Rambla - 83270 Saint Cyr sur Mer
+                            <p>Adresse : <a href="https://www.google.fr/maps/place/2+Prom.+de+la+Rambla,+83270+Saint-Cyr-sur-Mer/@43.1781201,5.7009921,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9a871fc8b09cd:0xa376fc6ab36603dc!8m2!3d43.1781201!4d5.7031808" target="_blank">2 Promenade de la Rambla - 83270 Saint Cyr sur Mer</a>
                             <br>
-                            <p>Téléphone : 07.86.66.05.43
+                            <p>Téléphone : <a href="tel:+33786660543">07.86.66.05.43</a>
                             <br>
                             <br>
                             N°Adeli : 839504545</p>
