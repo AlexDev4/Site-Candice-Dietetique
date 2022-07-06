@@ -6,14 +6,16 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Newsletter Entity
+ * Task Entity
  *
  * @property int $id
- * @property string $mail
+ * @property string $task
+ * @property int|null $priority
+ * @property \Cake\I18n\FrozenTime $due_date
  * @property bool $is_active
- * @property \Cake\I18n\FrozenTime $created
+ * @property string|null $comment
  */
-class Newsletter extends Entity
+class Task extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -25,8 +27,10 @@ class Newsletter extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
-        'mail' => true,
+        'task' => true,
+        'priority' => true,
+        'due_date' => true,
         'is_active' => true,
-        'created' => true,
+        'comment' => true,
     ];
 }

@@ -4128,6 +4128,7 @@ fieldset:disabled .btn {
 
 .alert {
   position: relative;
+  text-align: center;
   padding: 0.71rem 1rem;
   margin-bottom: 1rem;
   border: 0 solid transparent;
@@ -4192,7 +4193,8 @@ fieldset:disabled .btn {
 .alert-danger {
   color: #8c3233;
   background-color: #fbdddd;
-  border-color: #f9cccc; }
+  border-color: #f9cccc
+ }
 
 .alert-danger .alert-link {
   color: #702829; }

@@ -6,9 +6,9 @@ namespace App\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * NewslettersFixture
+ * TasksFixture
  */
-class NewslettersFixture extends TestFixture
+class TasksFixture extends TestFixture
 {
     /**
      * Init method
@@ -20,9 +20,11 @@ class NewslettersFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'mail' => 'Lorem ipsum dolor sit amet',
+                'task' => 'Lorem ipsum dolor sit amet',
+                'priority' => 1,
+                'due_date' => '2022-07-06 19:37:23',
                 'is_active' => 1,
-                'created' => '2022-07-06 14:21:21',
+                'comment' => 'Lorem ipsum dolor sit amet',
             ],
         ];
         parent::init();

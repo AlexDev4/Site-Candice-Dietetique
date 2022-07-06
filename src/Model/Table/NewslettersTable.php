@@ -24,6 +24,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Newsletter[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
  * @method \App\Model\Entity\Newsletter[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
  * @method \App\Model\Entity\Newsletter[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class NewslettersTable extends Table
 {
@@ -40,6 +42,8 @@ class NewslettersTable extends Table
         $this->setTable('newsletters');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
     }
 
     /**

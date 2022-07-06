@@ -98,4 +98,20 @@ class PagesController extends AppController
     {
 
     }
+    public function newsletter()
+    {
+        if ($this->getRequest()->is(['patch', 'post', 'put'])) {
+
+            if (!empty($this->getRequest()->getData('mail'))) {
+                $this->loadModel('Newsletters');
+                $requestNewsletter = $this->Newsletters->newEntity($this->getRequest()->getData());
+                if ($this->Newsletters->save($requestNewsletter)) {
+                    $this->Flash->success('Merci pour votre inscription !');
+                } else {
+                    $this->Flash->error('Une erreur est survenue. Merci de réessayer.');
+                }
+            }
+        }
+        return $this->redirect($this->referer());
+    }
 }

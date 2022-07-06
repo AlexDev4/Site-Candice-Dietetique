@@ -27,6 +27,9 @@
     <link rel="stylesheet" type="text/css" href="<?= $this->Url->build('/bo/assets/css/pages/dashboard-ecommerce.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?= $this->Url->build('/bo/assets/css/plugins/charts/chart-apex.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?= $this->Url->build('/bo/assets/css/plugins/extensions/ext-component-toastr.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?= $this->Url->build('/bo/assets/css/custom.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
 
 </head>
 
@@ -267,9 +270,9 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="app-email.html"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Email</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Chat</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="<?= $this->Url->build('/backoffice/newsletters') ?>"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Newsletter">Newsletter</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Todo</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="<?= $this->Url->build('/backoffice/tasks') ?>"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Liste des tâches</span></a>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Calendar</span></a>
                 </li>
@@ -297,6 +300,15 @@
     <script src="<?= $this->Url->build('/bo/assets/js/core/app-menu.js'); ?>"></script>
     <script src="<?= $this->Url->build('/bo/assets/js/core/app.js'); ?>"></script>
     <script src="<?= $this->Url->build('/bo/assets/js/scripts/pages/dashboard-ecommerce.js'); ?>"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ace45f598.js" crossorigin="anonymous"></script>
+
+
 
     <script>
         $(window).on('load', function() {
@@ -307,6 +319,24 @@
                 });
             }
         })
+        $(document).ready(function() {
+            $('.data-table').DataTable({
+                language: {
+                    url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json",
+                },
+                dom: 'Bfrtip',
+                buttons: [
+                    'excelHtml5',
+                    'csvHtml5',
+                ]
+            });
+
+            /*    const datatableConfig = {
+                   language: {
+                       url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json'
+                   }
+               }; */
+        });
     </script>
 </body>
 
