@@ -45,7 +45,7 @@
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email"><i class="ficon" data-feather="mail"></i></a></li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"><i class="ficon" data-feather="message-square"></i></a></li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Calendar"><i class="ficon" data-feather="calendar"></i></a></li>
-                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo"><i class="ficon" data-feather="check-square"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="<?= $this->Url->build('/backoffice/tasks') ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo"><i class="ficon" data-feather="check-square"></i></a></li>
                 </ul>
                 <ul class="nav navbar-nav">
                     <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon text-warning" data-feather="star"></i></a>
@@ -306,7 +306,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
     <script src="//cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.12.1/dataRender/datetime.js"></script>
     <script src="https://kit.fontawesome.com/2ace45f598.js" crossorigin="anonymous"></script>
+
 
 
 
@@ -324,18 +326,13 @@
                 language: {
                     url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json",
                 },
+                "ordering": false,
                 dom: 'Bfrtip',
                 buttons: [
                     'excelHtml5',
                     'csvHtml5',
                 ]
             });
-
-            /*    const datatableConfig = {
-                   language: {
-                       url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json'
-                   }
-               }; */
         });
     </script>
 </body>

@@ -60,9 +60,9 @@ class TasksTable extends Table
             ->allowEmptyString('priority');
 
         $validator
-            ->dateTime('due_date')
-            ->requirePresence('due_date', 'create')
-            ->notEmptyDateTime('due_date');
+            ->scalar('due_date')
+            ->maxLength('due_date', 50)
+            ->notEmptyString('due_date');
 
         $validator
             ->boolean('is_active')
@@ -72,6 +72,10 @@ class TasksTable extends Table
             ->scalar('comment')
             ->maxLength('comment', 255)
             ->allowEmptyString('comment');
+
+        $validator
+            ->boolean('done')
+            ->notEmptyString('done');
 
         return $validator;
     }

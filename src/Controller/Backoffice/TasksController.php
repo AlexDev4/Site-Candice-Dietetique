@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller\Backoffice;
@@ -18,12 +19,6 @@ class TasksController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
-    public function index()
-    {
-        $tasks = $this->paginate($this->Tasks);
-
-        $this->set(compact('tasks'));
-    }
 
     /**
      * View method
@@ -32,6 +27,12 @@ class TasksController extends AppController
      * @return \Cake\Http\Response|null|void Renders view
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
+
+    public function index()
+    {
+        $this->set('tasks', $this->Tasks->find()->order(['priority' => 'DESC', 'due_date' => 'ASC'])->all());
+    }
+
     public function view($id = null)
     {
         $task = $this->Tasks->get($id, [
@@ -94,14 +95,31 @@ class TasksController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+        /*         $this->request->allowMethod(['post', 'delete']);
+ */
         $task = $this->Tasks->get($id);
         if ($this->Tasks->delete($task)) {
-            $this->Flash->success(__('The task has been deleted.'));
+            $this->Flash->success(__('La tâche a bien été supprimée'));
         } else {
-            $this->Flash->error(__('The task could not be deleted. Please, try again.'));
+            $this->Flash->error(__('L\'opération a rencontré une erreur. Veuillez réessayer.'));
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect($this->referer());
+    }
+
+    public function done($id = null)
+    {
+        $task = $this->Tasks->get($id);
+        if ($task->done == true) {
+            $this->Flash->warning(__('La tâche est déjà terminée.'));
+        } else {
+            $task->done = true;
+            if ($this->Tasks->save($task)) {
+                $this->Flash->success(__('La tâche est terminée !'));
+            } else {
+                $this->Flash->error(__('L\'opération a rencontré une erreur. Veuillez réessayer.'));
+            }
+        }
+        return $this->redirect($this->referer());
     }
 }

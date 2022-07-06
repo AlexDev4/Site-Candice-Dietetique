@@ -25,3 +25,16 @@
 .dt-button.buttons-excel.buttons-html5{
     margin: 0px 50px 0px 0px;
 }
+.moyenne{
+    background-color: yellow !important;
+}
+.importante{
+    background-color: orange !important;
+}
+.urgente{
+    background-color: red !important;
+    color: #fff !important;
+}
+.done{
+    background-color: greenyellow !important;
+}

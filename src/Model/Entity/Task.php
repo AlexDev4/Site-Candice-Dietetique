@@ -11,9 +11,10 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $task
  * @property int|null $priority
- * @property \Cake\I18n\FrozenTime $due_date
+ * @property string $due_date
  * @property bool $is_active
  * @property string|null $comment
+ * @property bool $done
  */
 class Task extends Entity
 {
@@ -32,5 +33,6 @@ class Task extends Entity
         'due_date' => true,
         'is_active' => true,
         'comment' => true,
+        'done' => true,
     ];
 }

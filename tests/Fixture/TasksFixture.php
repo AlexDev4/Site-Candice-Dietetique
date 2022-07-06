@@ -22,9 +22,10 @@ class TasksFixture extends TestFixture
                 'id' => 1,
                 'task' => 'Lorem ipsum dolor sit amet',
                 'priority' => 1,
-                'due_date' => '2022-07-06 19:37:23',
+                'due_date' => 'Lorem ipsum dolor sit amet',
                 'is_active' => 1,
                 'comment' => 'Lorem ipsum dolor sit amet',
+                'done' => 1,
             ],
         ];
         parent::init();

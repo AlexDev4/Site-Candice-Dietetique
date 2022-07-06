@@ -1,6 +1,6 @@
 <?= $this->layout = 'backoffice'; ?>
 <?php $this->assign('title', 'Listes des tâches'); ?>
-<?php $baseUrl = '/backoffice/liste-des-taches' ?>
+<?php $baseUrl = '/backoffice/tasks' ?>
 <?php
 $this->append('css');
 echo $this->Html->css('/bo/css/extensions/sweetalert2.min.css');
@@ -49,8 +49,23 @@ $this->end();
                                     </thead>
                                     <tbody>
                                         <?php foreach ($tasks as $task) : ?>
-                                            <tr>
-                                            <td>
+                                            <tr class=<?php
+                                                        if ($task->done == true) {
+                                                            echo "done";
+                                                        } else {
+                                                            switch ($task->priority) {
+                                                                case 1:
+                                                                    echo "moyenne";
+                                                                    break;
+                                                                case 2:
+                                                                    echo "importante";
+                                                                    break;
+                                                                case 3:
+                                                                    echo "urgente";
+                                                                    break;
+                                                            }
+                                                        } ?>>
+                                                <td>
                                                     <?php switch ($task->priority) {
                                                         case 0:
                                                             echo "Faible";
@@ -64,12 +79,12 @@ $this->end();
                                                         case 3:
                                                             echo "Urgente";
                                                             break;
-                                                    }?>
+                                                    } ?>
                                                 </td>
                                                 <td>
                                                     <?= $task->task ?>
                                                 </td>
-                                                
+
                                                 <td>
                                                     <?= $task->due_date ?></a>
                                                 </td>
@@ -78,6 +93,9 @@ $this->end();
                                                 </td>
 
                                                 <td>
+                                                        <a class="btn btn-primary" href="<?= $this->Url->build($baseUrl . '/done/' . $task->id) ?>">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </a>
                                                     <a class="btn btn-danger btn-delete" href="<?= $this->Url->build($baseUrl . '/delete/' . $task->id) ?>">
                                                         <i class="fa-solid fa-trash-can"></i>
                                                     </a>
@@ -115,6 +133,7 @@ $this->end();
                 }
             }
         ]
+
         $('table').dataTable(datatableConfig);
         $('.btn-delete').on('click', function(e) {
             e.preventDefault();
