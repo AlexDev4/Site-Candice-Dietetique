@@ -36,8 +36,8 @@
             <div class="content-body">
                 <div class="auth-wrapper auth-cover">
                     <div class="auth-inner row m-0">
-                        <a class="brand-logo" href="">
-                            <h2 class="brand-text text-primary ms-1">Beeofeed - Administration   </h2>
+                        <a class="brand-logo" href="webroot\img\logo\android-chrome-192x192.png">
+                            <h2 class="brand-text text-primary ms-1">Candice VIVIAN-LATIL | Diététicienne-Nutritionniste - Administration   </h2>
                         </a>
                         <?= $this->Flash->render() ?>
                          <?= $this->fetch('login') ?> 

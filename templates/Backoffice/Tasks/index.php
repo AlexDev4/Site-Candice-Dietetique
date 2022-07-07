@@ -1,5 +1,5 @@
 <?= $this->layout = 'backoffice'; ?>
-<?php $this->assign('title', 'Listes des tâches'); ?>
+<?php $this->assign('title', 'Liste'); ?>
 <?php $baseUrl = '/backoffice/tasks' ?>
 <?php
 $this->append('css');
@@ -30,6 +30,7 @@ $this->end();
     </div>
 </div>
 <div class="content-body">
+<p>Possibilité 1</p>
     <section class="users-list-wrapper ">
         <div class="users-list-table">
             <div class="row card">
@@ -37,7 +38,7 @@ $this->end();
                     <div class="card-content">
                         <div class="card-body">
                             <div class="table-responsive btn-export">
-                                <table class="data-table">
+                                <table class="data-table-tasks">
                                     <thead>
                                         <tr>
                                             <td>Priorité</td>

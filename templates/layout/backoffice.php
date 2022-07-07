@@ -322,7 +322,25 @@
             }
         })
         $(document).ready(function() {
-            $('.data-table').DataTable({
+            $('.data-table-tasks').DataTable({
+                language: {
+                    url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json",
+                },
+                "ordering": false,
+                dom: 'Bfrtip',
+                buttons: [
+                    'excelHtml5',
+                    'csvHtml5',
+                    {
+                        text: 'Créer une nouvelle tâche',
+                        className: 'btn-add',
+                        action: function(e, dt, button, config) { 
+                            window.location = '<?= $this->Url->build('/backoffice/tasks/add') ?>'
+                        }
+                    }
+                ]
+            });
+            $('.data-table-news').DataTable({
                 language: {
                     url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json",
                 },
@@ -337,4 +355,4 @@
     </script>
 </body>
 
-</html>
+</html> 

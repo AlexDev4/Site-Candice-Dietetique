@@ -37,7 +37,7 @@ $this->end();
                     <div class="card-content">
                         <div class="card-body">
                             <div class="table-responsive btn-export">
-                                <table class="data-table">
+                                <table class="data-table-news">
                                     <thead>
                                         <tr>
                                             <td class="d-none">Ordre</td>

@@ -13,6 +13,7 @@
 	border-radius: 15px;
 	color: #FFC09F;
     background-color: #fff;
+    margin: 0px 10px 0px 10px
 }
 .btn-export .dt-button:hover {
     font-weight: 500;
@@ -22,9 +23,9 @@
 	color: #fff;
 	background-color: #FFC09F;
 }
-.dt-button.buttons-excel.buttons-html5{
+/* .dt-button.buttons-excel.buttons-html5{
     margin: 0px 50px 0px 0px;
-}
+} */
 .moyenne{
     background-color: yellow !important;
 }

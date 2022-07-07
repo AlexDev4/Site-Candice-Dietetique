@@ -14,20 +14,6 @@ use App\Controller\AppController;
  */
 class TasksController extends AppController
 {
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|null|void Renders view
-     */
-
-    /**
-     * View method
-     *
-     * @param string|null $id Task id.
-     * @return \Cake\Http\Response|null|void Renders view
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-
     public function index()
     {
         $this->set('tasks', $this->Tasks->find()->order(['priority' => 'DESC', 'due_date' => 'ASC'])->all());
@@ -42,34 +28,23 @@ class TasksController extends AppController
         $this->set(compact('task'));
     }
 
-    /**
-     * Add method
-     *
-     * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
-     */
+
     public function add()
     {
         $task = $this->Tasks->newEmptyEntity();
         if ($this->request->is('post')) {
             $task = $this->Tasks->patchEntity($task, $this->request->getData());
             if ($this->Tasks->save($task)) {
-                $this->Flash->success(__('The task has been saved.'));
+                $this->Flash->success(__('La tâche a bien été enregistrée.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect('/backoffice/tasks');
             }
-            $this->Flash->error(__('The task could not be saved. Please, try again.'));
+            $this->Flash->error(__('L\'opération a rencontré une erreur. Veuillez réessayer.'));
         }
         $this->set(compact('task'));
     }
 
-    /**
-     * Edit method
-     *
-     * @param string|null $id Task id.
-     * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function edit($id = null)
+    public function edit($id = 5)
     {
         $task = $this->Tasks->get($id, [
             'contain' => [],
@@ -77,11 +52,11 @@ class TasksController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $task = $this->Tasks->patchEntity($task, $this->request->getData());
             if ($this->Tasks->save($task)) {
-                $this->Flash->success(__('The task has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+                $this->Flash->success(__('Les modifications sont enregistées.'));
+                dd('toto');
+                return $this->redirect('/backoffice/tasks');
             }
-            $this->Flash->error(__('The task could not be saved. Please, try again.'));
+            $this->Flash->error(__('L\'opération a rencontré une erreur. Veuillez réessayer.'));
         }
         $this->set(compact('task'));
     }
