@@ -58,11 +58,6 @@ class AppController extends Controller
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         parent::beforeFilter($event);
-        
-        if($this->getRequest()->getParam('prefix') === 'Backoffice'){
-            $this->Authentication->addUnauthenticatedActions(['index', 'view']);
-
-        }
     }
 
     protected function onSubmitNewsletter()

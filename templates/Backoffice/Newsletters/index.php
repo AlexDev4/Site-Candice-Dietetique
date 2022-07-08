@@ -3,7 +3,7 @@
 <?php $baseUrl = '/backoffice/newsletters' ?>
 <?php
 $this->append('css');
-echo $this->Html->css('/bo/css/extensions/sweetalert2.min.css');
+ $this->Html->css('/bo/css/extensions/sweetalert2.min.css');
 $this->end();
 ?>
 

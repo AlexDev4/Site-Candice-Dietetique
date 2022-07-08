@@ -30,7 +30,6 @@ $this->end();
     </div>
 </div>
 <div class="content-body">
-<p>Possibilité 1</p>
     <section class="users-list-wrapper ">
         <div class="users-list-table">
             <div class="row card">
